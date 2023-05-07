@@ -1,0 +1,1194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Elements</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  
+<!-- Font Awesome cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Google font - Quicksand -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- File css -->
+<link rel="stylesheet" href="./css/element_style.css">
+</head>
+
+<body id="myBody">
+  <!-- HEADER -->
+  <header id="myHeader">
+    <div class="container">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a href="https://wp.w3layouts.com/diner/" class="fs-2 text-white" id="Home" >Diner</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search here..." aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass fs-5"></i>
+            <button class="btn" id="switchButton" title="Click to switch theme" onclick="darkMode()">
+              <i class="fa-regular fa-moon btn fs-4 me-2 text-white" id="moon"></i>
+              <i class="fa-regular fa-sun btn fs-4 me-2 " id="sun"></i>
+            </button>
+                        <!-- MENU POP UP -->
+            
+            <!-- Button trigger modal -->
+<button type="button" class="border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <i class="fa-solid fa-bars btn fs-4 text-white"></i>
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class=" modal-content text-center">
+        <!-- <div class="modal-header"> -->
+          <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        <!-- </div> -->
+        <!-- <div class="modal-body text-center"> -->
+            <a href="./index.html">Home</a> <br>
+            <a href="./about.html">About</a> <br>
+            <a href="./services.html">Services</a> <br>
+            <a href="./blog.html">Blog Posts</a> <br>
+            <a href="./404_page.html">404 page</a> <br>
+            <a href="./elements.html">Elements</a> <br>
+            <a href="./contact.html">Contact</a> <br>
+            <a href="./landing_page.html">Landing page</a>
+        <!-- </div> -->
+        <!-- <div class="modal-footer"> -->
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+              <!-- END MENU POP UP -->
+          </form>
+        </div>
+      </nav>
+      <div class="direction d-flex justify-content-center fs-5 fw-semibold">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;) url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item "><a href="https://wp.w3layouts.com/diner/">Home</a></li>
+            <li class="breadcrumb-item active text-white" aria-current="page">Element Page</li>
+          </ol>
+        </nav>
+    </div>
+  </header>
+  <!-- END HEADER -->
+  <main>
+  <!-- OVERVIEW -->
+    <div class="container">
+        <h3>Overview</h3>
+        <h5 class="mt-4">container</h5>
+        <span>While containers can be nested, most layouts do not require a nested container.</span>
+        <div class="bg border d-flex justify-content-center align-items-center rounded-2 mt-3">
+            <div class="left me-2 rounded-2"></div>
+            <div class="right rounded-2"></div>
+        </div>
+        <div class="code">
+            <div class="code__bg">
+                <div class="text">
+                    <pre>
+<span class="a"><</span><span class="b">div</span> <span class="c">class=</span><span class="d">"container"</span><span class="a">></span>
+<span class="a"><</span><span class="f">!--</span><span class="a">Content here</span><span class="a">--</span><span class="a">></span>                       
+<span class="a"><</span><span class="a">/div></span>
+                    </pre>
+                </div>                
+            </div>
+        </div>
+        <h5 class="mt-4">container-fluid</h5>
+        <span>Use <code class="highlight">.container-fluid</code> for a full width container, spanning the entire width of the viewport.</span>
+        <div class="fluid__example border rounded-2 mt-3">
+            <div class="container-fluid">
+                <div class="fluid__example-container-header d-flex">
+                    <div class="left me-2 rounded-2"></div>
+                    <div class="right rounded-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="code">
+            <div class="code__bg">
+                <div class="text">
+                    <span class="a"><</span>
+                    <span class="b">div</span>
+                    <span class="c">class=</span>
+                    <span class="d">"container-fluid"</span> 
+                    <span class="a">></span><br>
+                    <span class="a">. . .</span> <br>
+                    <span class="a"><</span> 
+                    <span class="a">/div></span> 
+                </div>                
+            </div>
+        </div>
+        <h4 class="mt-5 text-dark fw-bold">Display Headings</h4>
+        <div class="display border rounded-2 mt-5">
+            <h1>Display 1</h1>
+            <h1>Display 2</h1>
+            <h1>Display 3</h1>
+            <h1>Display 4</h1>
+        </div>
+        <div class="code">
+            <div class="code__bg">
+                <div class="text">
+                    <span class="a"><</span>
+                    <span class="b">h1</span>
+                    <span class="c">class=</span>
+                    <span class="d">"display-1"</span>
+                    <span class="a">></span>
+                    <span class="a">Display 1</span>
+                    <span class="a"><</span> 
+                    <span class="a">/h1></span> <br>
+                    <span class="a"><</span>
+                    <span class="b">h1</span>
+                    <span class="c">class=</span>
+                    <span class="d">"display-2"</span>
+                    <span class="a">></span>
+                    <span class="a">Display 2</span>
+                    <span class="a"><</span> 
+                    <span class="a">/h1></span> <br>
+                    <span class="a"><</span>
+                    <span class="b">h1</span>
+                    <span class="c">class=</span>
+                    <span class="d">"display-3"</span>
+                    <span class="a">></span>
+                    <span class="a">Display 3</span>
+                    <span class="a"><</span> 
+                    <span class="a">/h1></span> <br>
+                    <span class="a"><</span>
+                    <span class="b">h1</span>
+                    <span class="c">class=</span>
+                    <span class="d">"display-4"</span>
+                    <span class="a">></span>
+                    <span class="a">Display 4</span>
+                    <span class="a"><</span> 
+                    <span class="a">/h1></span>
+                </div>                
+            </div>
+        </div>
+        <h4 class="mt-5 text-dark fw-bold">Blockquotes With Naming A Source</h4>
+        <div class="blockquotes border rounded-2 mt-5">
+            <blockquote class="blockquotes__bg border-start-0 border-end-0 rounded-2">
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <span class="blockquote-footer mt-1">Someone famous in <cite title="Source Title">Source Title</cite></span>
+            </blockquote>
+        </div>
+        <div class="code">
+            <div class="code__bg">
+                <div class="text">
+                    <span class="a"><</span>
+                    <span class="b">blockquote</span>
+                    <span class="c">class=</span>
+                    <span class="d">"blockquote"</span> 
+                    <span class="a">></span> <br>
+                    <span class="a"><</span>
+                    <span class="a">p</span> 
+                    <span class="c">class=</span> 
+                    <span class="d">"mb-0"</span>
+                    <span class="b">></span>
+                    <span class="a">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                    </span>
+                    <span class="a"><</span>
+                    <span class="a">/p></span> <br>
+                    <span class="a"><</span>
+                    <span class="a">footer</span> 
+                    <span class="c">class=</span>
+                    <span class="d">"blockquote-footer"</span>
+                    <span class="a">Someone famous in</span>
+                    <span class="a"> <</span>
+                    <span class="a">cite</span>
+                    <span class="c">title=</span>
+                    <span class="d">"Source Title"</span>
+                    <span class="a">></span> 
+                    <span class="a">Source Title</span>
+                    <span class="a"><</span>
+                    <span class="b">/cite></span>
+                    <span class="a"><</span>
+                    <span class="d">/footer></span> <br>
+                    <span class="a"><</span>
+                    <span class="a">/blockquote></span>
+                </div>                
+            </div>
+        </div>
+        <h4 class="mt-5 text-dark fw-bold">Alignments</h4>
+        <div class="blockquotes border rounded-2 mt-5 text-end">
+            <blockquote class="blockquotes__bg border-start-0 border-end-0 rounded-2">
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <span class="blockquote-footer mt-1">Someone famous in <cite title="Source Title">Source Title</cite></span>
+            </blockquote>
+        </div>
+        <div class="code">
+            <div class="code__bg">
+                <div class="text">
+                    <span class="a"><</span>
+                    <span class="b">blockquote</span>
+                    <span class="c">class=</span>
+                    <span class="d">"blockquote text-right"</span>
+                    <span class="a">></span> <br>
+                    <span class="a"><</span>
+                    <span class="a">p</span> 
+                    <span class="c">class=</span> 
+                    <span class="d">"mb-0"</span>
+                    <span class="b">></span>
+                    <span class="a">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                    </span>
+                    <span class="a"><</span>
+                    <span class="a">/p></span> <br>
+                    <span class="a"><</span>
+                    <span class="a">footer</span> 
+                    <span class="c">class=</span>
+                    <span class="d">"blockquote-footer"</span>
+                    <span class="a">Someone famous in</span>
+                    <span class="a"> <</span>
+                    <span class="a">cite</span>
+                    <span class="c">title=</span>
+                    <span class="d">"Source Title"</span>
+                    <span class="a">></span> 
+                    <span class="a">Source Title</span>
+                    <span class="a"><</span>
+                    <span class="b">/cite></span>
+                    <span class="a"><</span>
+                    <span class="d">/footer></span> <br>
+                    <span class="a"><</span>
+                    <span class="a">/blockquote></span>
+                </div>                
+            </div>
+        </div>
+        <h4 class="mt-5 text-dark fw-bold">Jumbotron</h4>
+        <div class="jumbotron__bg mt-3">
+            <div class="jumbotron">
+                <h1 class="display-4">Hello, world!</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <hr class="my-4">
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <p class="lead">
+                  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                </p>
+            </div>
+        </div>
+        <div class="code">
+            <div class="code__bg">
+                <div class="text">
+                    <span class="a"><</span>
+                    <span class="b">div</span>
+                    <span class="c">class=</span>
+                    <span class="d">"jumbotron"</span>
+                    <span class="a">></span> <br>
+                    <div class="content">
+                        <pre>
+                <span class="a"><</span><span class="a">h1</span> <span class="c">class=</span><span class="d">"display-4"</span><span class="b">></span><span class="a">Hello, world!</span><span class="a"><</span><span class="a">/h1></span> 
+                <span class="a"><</span><span class="a">p</span> <span class="c">class=</span><span class="d">"lead"</span><span class="b">></span><span class="a">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</span><span class="a"><</span><span class="a">/p></span>
+                <span class="a"><</span><span class="a">hr</span> <span class="c">class=</span><span class="d">"my-4"</span><span class="a">></span>                
+                <span class="a"><</span><span class="a">p></span><span class="a">It uses utility classes for typography and spacing to space content out within the larger container.</span><span class="a"><</span><span class="a">/p></span>
+                <span class="a"><</span><span class="a">p</span> <span class="c">class=</span><span class="d">"lead"</span><span class="a">></span>
+                    <span class="a"><</span><span class="a">a</span> <span class="c">class=</span><span class="d">"btn btn-primary btn-lg"</span> <span class="c">href=</span><span class="d">"#"</span> <span class="c">role=</span><span class="d">"button"</span><span class="a">></span><span class="a">Learn more</span><span class="a"><</span><span class="a">/a></span>
+                <span class="a"><</span><span class="a">/p></span>
+            <span class="a"><</span><span class="a">/div></span>
+                        </pre>
+                    </div>  
+                </div>                
+            </div>
+        </div>
+        <h4 class="mt-5 text-dark fw-bold">Fluid Jumbotron</h4>
+        <div class="jumbotron__bg mt-3">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">Fluid jumbotron</h1>
+                  <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                </div>
+            </div>
+        </div>
+        <div class="code">
+            <div class="code__bg">
+                <div class="text">
+                    <span class="a"><</span>
+                    <span class="b">div</span>
+                    <span class="c">class=</span>
+                    <span class="d">"jumbotron jumbotron-fluid"</span>
+                    <span class="a">></span> <br>
+                    <div class="content">
+                        <pre>
+                <span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"container"</span>
+                    <span class="b"><</span><span class="b">h1</span> <span class="c">class=</span><span class="d">"display-4"</span><span class="a">></span><span class="a">Fluid jumbotron</span><span class="a"><</span><span class="a">/h1></span> 
+                    <span class="a"><</span><span class="a">p</span> <span class="c">class=</span><span class="d">"lead"</span><span class="b">></span><span class="a">This is a modified jumbotron that occupies the entire horizontal space of its parent.</span><span class="a"><</span><span class="a">/p></span>
+                <span class="a"><</span><span class="a">/div></span>
+            <span class="a"><</span><span class="a">/div></span>
+                        </pre>
+                    </div>  
+                </div>                
+            </div>
+        </div>
+        <h4 class="mt-5 text-dark fw-bold">Buttons</h4>
+        <div class="buttons border mt-4 rounded-2">
+            <div class="buttons__bg ">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+                <button type="button" class="btn btn-link">Link</button>
+            </div>
+        </div>
+        <div class="code">
+            <div class="code__bg">
+                <div class="text">
+                    <pre>
+<span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"btn btn-primary"</span><span class="a">></span>Primary<span class="a"><</span><span class="a">/button></span>
+<span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"btn btn-secondary"</span><span class="a">></span>Secondary<span class="a"><</span><span class="a">/button></span>
+<span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"btn btn-success"</span><span class="a">></span>Success<span class="a"><</span><span class="a">/button></span>
+<span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"btn btn-danger"</span><span class="a">></span>Danger<span class="a"><</span><span class="a">/button></span>
+<span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"btn btn-warning"</span><span class="a">></span>Warning<span class="a"><</span><span class="a">/button></span>
+<span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"btn btn-info"</span><span class="a">></span>Info<span class="a"><</span><span class="a">/button></span>
+<span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"btn btn-light"</span><span class="a">></span>Light<span class="a"><</span><span class="a">/button></span>
+<span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"btn btn-dark"</span><span class="a">></span>Dark<span class="a"><</span><span class="a">/button></span>
+<span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"btn btn-link"</span><span class="a">></span>Link<span class="a"><</span><span class="a">/button></span>
+                    </pre>
+                </div>
+            </div>
+        </div>
+        <h5 class="mt-5 fw-bold">Outline buttons</h5>
+        <div class="outline border mt-4 rounded-2">
+            <div class="outline__bg">
+                <button type="button" class="btn btn-outline-primary">Primary</button>
+                <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                <button type="button" class="btn btn-outline-success">Success</button>
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+                <button type="button" class="btn btn-outline-warning">Warning</button>
+                <button type="button" class="btn btn-outline-info">Info</button>
+                <button type="button" class="btn btn-outline-light">Light</button>
+                <button type="button" class="btn btn-outline-dark">Dark</button>
+            </div>
+        </div>
+        <div class="code ">
+            <div class="code__bg">
+                <div class="text">
+                    <pre>
+<span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"btn btn-outline-primary"</span><span class="a">></span>Primary<span class="a"><</span><span class="a">/button></span>
+<span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"btn btn-outline-secondary"</span><span class="a">></span>Secondary<span class="a"><</span><span class="a">/button></span>
+<span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"btn btn-outline-success"</span><span class="a">></span>Success<span class="a"><</span><span class="a">/button></span>
+<span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"btn btn-outline-danger"</span><span class="a">></span>Danger<span class="a"><</span><span class="a">/button></span>
+<span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"btn btn-outline-warning"</span><span class="a">></span>Warning<span class="a"><</span><span class="a">/button></span>
+<span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"btn btn-outline-info"</span><span class="a">></span>Info<span class="a"><</span><span class="a">/button></span>
+<span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"btn btn-outline-light"</span><span class="a">></span>Light<span class="a"><</span><span class="a">/button></span>
+<span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"btn btn-outline-dark"</span><span class="a">></span>Dark<span class="a"><</span><span class="a">/button></span>
+<span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"btn btn-outline-link"</span><span class="a">></span>Link<span class="a"><</span><span class="a">/button></span>
+                    </pre>
+                </div>
+            </div>
+        </div>
+        <h4 class="mt-5 text-dark fw-bold">Flex Properties</h4>
+        <h5 class="mt-5 fw-bold">d-flex</h5>
+        <div class="flex border rounded-2 mt-4">
+            <div class="flex__bg">
+                <div class="d-flex p-2 bd-highlight">I'm a flexbox container!</div>
+            </div>
+        </div>
+        <div class="code">
+            <div class="code__bg">
+                <div class="text">
+                    <pre>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"d-flex p-2 bd-highlight"</span><span class="a">></span><span class="d">I'm a flexbox container!</span><span class="a"><</span><span class="a">/div></span>
+                    </pre>
+                </div>
+            </div>
+        </div>
+        <h5 class="mt-5 fw-bold">d-inline-flex</h5>
+        <div class="inline border rounded-2 mt-4">
+            <div class="inline__bg">
+                <div class="d-inline-flex p-2 bd-highlight">I'm an inline flexbox container!</div>
+            </div>
+        </div>
+        <div class="code">
+            <div class="code__bg">
+                <div class="text">
+                    <pre>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"d-inline-flex p-2 bd-highlight"</span><span class="a">></span><span class="d">I'm a flexbox container!</span><span class="a"><</span><span class="a">/div></span>
+                    </pre>
+                </div>
+            </div>
+        </div>
+        <h4 class="mt-5 text-dark fw-bold">Flex Direction</h4>
+        <div class="direction d-flex">
+            <div class="direction__left me-5">
+                <h5 class="mt-5 fw-bold">flex-row</h5>
+                <div class="row border rounded-2 mt-4">
+                    <div class="row__bg">
+                        <div class="d-flex flex-row bd-highlight">
+                            <div class="p-2 bd-highlight">Flex item 1</div>
+                            <div class="p-2 bd-highlight">Flex item 2</div>
+                            <div class="p-2 bd-highlight">Flex item 3</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="code">
+                    <div class="code__bg">
+                        <div class="text">
+                            <pre>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"d-flex flex-row bd-highlight mb-3"</span><span class="a">></span>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"p-2 bd-highlight</span><span class="a">></span><span class="a">Flex item 1</span><span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"p-2 bd-highlight</span><span class="a">></span><span class="a">Flex item 2</span><span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"p-2 bd-highlight</span><span class="a">></span><span class="a">Flex item 3</span><span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">/div></span>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="direction__right">
+                <h5 class="mt-5 fw-bold">flex-row-reverse</h5>
+                <div class="reverse border rounded-2 mt-4">
+                    <div class="reverse__bg">
+                        <div class="d-flex flex-row-reverse bd-highlight">
+                            <div class="p-2 bd-highlight">Flex item 1</div>
+                            <div class="p-2 bd-highlight">Flex item 2</div>
+                            <div class="p-2 bd-highlight">Flex item 3</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="code">
+                    <div class="code__bg">
+                        <div class="text">
+                            <pre>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"d-flex flex-row-reverse bd-highlight mb-3"</span><span class="a">></span>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"p-2 bd-highlight</span><span class="a">></span><span class="a">Flex item 1</span><span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"p-2 bd-highlight</span><span class="a">></span><span class="a">Flex item 2</span><span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"p-2 bd-highlight</span><span class="a">></span><span class="a">Flex item 3</span><span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">/div></span>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4 class="mt-5 text-dark fw-bold">Justify Content</h4>
+        <div class="justify border rounded-2 mt-4">
+            <div class="justify__bg">
+                <div class="d-flex justify-content-start mb-3">
+                    <div class="p-2 bd-highlight">Flex item 1</div>
+                    <div class="p-2 bd-highlight">Flex item 2</div>
+                    <div class="p-2 bd-highlight">Flex item 3</div>
+                </div>
+                <div class="d-flex justify-content-end mb-3">
+                    <div class="p-2 bd-highlight">Flex item 1</div>
+                    <div class="p-2 bd-highlight">Flex item 2</div>
+                    <div class="p-2 bd-highlight">Flex item 3</div>
+                </div>
+                <div class="d-flex justify-content-center mb-3">
+                    <div class="p-2 bd-highlight">Flex item 1</div>
+                    <div class="p-2 bd-highlight">Flex item 2</div>
+                    <div class="p-2 bd-highlight">Flex item 3</div>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <div class="p-2 bd-highlight">Flex item 1</div>
+                    <div class="p-2 bd-highlight">Flex item 2</div>
+                    <div class="p-2 bd-highlight">Flex item 3</div>
+                </div>
+                <div class="d-flex justify-content-around">
+                    <div class="p-2 bd-highlight">Flex item 1</div>
+                    <div class="p-2 bd-highlight">Flex item 2</div>
+                    <div class="p-2 bd-highlight">Flex item 3</div>
+                </div>
+            </div>
+        </div>
+        <div class="code">
+            <div class="code__bg">
+                <div class="text">
+                    <pre>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"d-flex justify-content-start"</span><span class="a">></span><span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"d-flex justify-content-end"</span><span class="a">></span><span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"d-flex justify-content-center"</span><span class="a">></span><span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"d-flex justify-content-between"</span><span class="a">></span><span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"d-flex justify-content-around"</span><span class="a">></span><span class="a"><</span><span class="a">/div></span>
+                    </pre>
+                </div>
+            </div>
+        </div>
+        <h4 class="mt-5 text-dark fw-bold">Badges</h4>
+        <div class="badges border rounded-2 mt-4">
+            <div class="badge__bg">
+                <h1 class="">Example heading <span class="badge badge-secondary text-dark">New</span></h1>
+                <h2 class="">Example heading <span class="badge badge-secondary text-dark">New</span></h2>
+                <h3 class="">Example heading <span class="badge badge-secondary text-dark">New</span></h3>
+                <h4 class="">Example heading <span class="badge badge-secondary text-dark">New</span></h4>
+                <h5 class="">Example heading <span class="badge badge-secondary text-dark">New</span></h5>
+                <h6 class="">Example heading <span class="badge badge-secondary text-dark">New</span></h6>
+            </div>
+        </div>
+        <div class="code">
+            <div class="code__bg">
+                <div class="text">
+                    <pre>
+<span class="a"><</span><span class="a">h1></span><span class="a">Example heading </span><span class="a"><</span><span class="a">span</span> <span class="c">class=</span><span class="d">"badge badge-secondary"</span><span class="a">></span><span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"d-flex justify-content-end"</span><span class="a">></span><span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"d-flex justify-content-center"</span><span class="a">></span><span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"d-flex justify-content-between"</span><span class="a">></span><span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"d-flex justify-content-around"</span><span class="a">></span><span class="a"><</span><span class="a">/div></span>
+                    </pre>
+                </div>
+            </div>
+        </div>
+        <h4 class="mt-5 text-dark fw-bold">Lists</h4>
+        <div class="list d-flex">
+            <div class="list__left me-5">
+                <!-- PART 1 LEFT -->
+                <h5 class="mt-5 fw-bold">List Group</h5>
+                <div class="group border rounded-2 mt-4">
+                    <div class="group__bg">
+                        <ul class="list-group">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Morbi leo risus</li>
+                            <li class="list-group-item">Porta ac consectetur ac</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>                        
+                    </div>
+                </div>
+                <div class="code">
+                    <div class="code__bg">
+                        <div class="text">
+                            <pre>
+<span class="a"><</span><span class="a">ul</span> <span class="c">class=</span><span class="d">"list-group"</span><span class="a">></span>
+<span class="a"><</span><span class="a">li</span> <span class="c">class=</span><span class="d">"list-group-item"</span><span class="a">></span><span class="a">Cras justo odio</span><span class="a"><</span><span class="a">/li></span>
+<span class="a"><</span><span class="a">li</span> <span class="c">class=</span><span class="d">"list-group-item"</span><span class="a">></span><span class="a">Dapibus ac facilisis in</span><span class="a"><</span><span class="a">/li></span>
+<span class="a"><</span><span class="a">li</span> <span class="c">class=</span><span class="d">"list-group-item"</span><span class="a">></span><span class="a">Morbi leo risus</span><span class="a"><</span><span class="a">/li></span>
+<span class="a"><</span><span class="a">li</span> <span class="c">class=</span><span class="d">"list-group-item"</span><span class="a">></span><span class="a">Porta ac consectetur ac</span><span class="a"><</span><span class="a">/li></span>
+<span class="a"><</span><span class="a">li</span> <span class="c">class=</span><span class="d">"list-group-item"</span><span class="a">></span><span class="a">Vestibulum at eros</span><span class="a"><</span><span class="a">/li></span>
+<span class="a"><</span><span class="a">/ul></span>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- END PART 1 LEFT -->
+                <!-- PART 2 LEFT -->
+                <h5 class="mt-5 fw-bold">Flush</h5>
+                <div class="flush border rounded-2 mt-4">
+                    <div class="flush__bg">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Morbi leo risus</li>
+                            <li class="list-group-item">Porta ac consectetur ac</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="code">
+                    <div class="code__bg">
+                        <div class="text">
+                            <pre>
+<span class="a"><</span><span class="a">ul</span> <span class="c">class=</span><span class="d">"list-group list-group-flush"</span><span class="a">></span>
+<span class="a"><</span><span class="a">li</span> <span class="c">class=</span><span class="d">"list-group-item"</span><span class="a">></span><span class="a">Cras justo odio</span><span class="a"><</span><span class="a">/li></span>
+<span class="a"><</span><span class="a">li</span> <span class="c">class=</span><span class="d">"list-group-item"</span><span class="a">></span><span class="a">Dapibus ac facilisis in</span><span class="a"><</span><span class="a">/li></span>
+<span class="a"><</span><span class="a">li</span> <span class="c">class=</span><span class="d">"list-group-item"</span><span class="a">></span><span class="a">Morbi leo risus</span><span class="a"><</span><span class="a">/li></span>
+<span class="a"><</span><span class="a">li</span> <span class="c">class=</span><span class="d">"list-group-item"</span><span class="a">></span><span class="a">Porta ac consectetur ac</span><span class="a"><</span><span class="a">/li></span>
+<span class="a"><</span><span class="a">li</span> <span class="c">class=</span><span class="d">"list-group-item"</span><span class="a">></span><span class="a">Vestibulum at eros</span><span class="a"><</span><span class="a">/li></span>
+<span class="a"><</span><span class="a">/ul></span>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- END PART 2 LEFT -->
+            </div>
+            <div class="list__right">
+                <!-- PART 1 RIGHT-->
+                <h5 class="mt-5 fw-bold">Active items</h5>
+                <div class="item border rounded-2 mt-4">
+                    <div class="item__bg">
+                        <ul class="list-group">
+                            <li class="list-group-item active">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Morbi leo risus</li>
+                            <li class="list-group-item">Porta ac consectetur ac</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="code">
+                    <div class="code__bg">
+                        <div class="text">
+                            <pre>
+<span class="a"><</span><span class="a">ul</span> <span class="c">class=</span><span class="d">"list-group"</span><span class="a">></span>
+<span class="a"><</span><span class="a">li</span> <span class="c">class=</span><span class="d">"list-group-item active"</span><span class="a">></span><span class="a">Cras justo odio</span><span class="a"><</span><span class="a">/li></span>
+<span class="a"><</span><span class="a">li</span> <span class="c">class=</span><span class="d">"list-group-item"</span><span class="a">></span><span class="a">Dapibus ac facilisis in</span><span class="a"><</span><span class="a">/li></span>
+<span class="a"><</span><span class="a">li</span> <span class="c">class=</span><span class="d">"list-group-item"</span><span class="a">></span><span class="a">Morbi leo risus</span><span class="a"><</span><span class="a">/li></span>
+<span class="a"><</span><span class="a">li</span> <span class="c">class=</span><span class="d">"list-group-item"</span><span class="a">></span><span class="a">Porta ac consectetur ac</span><span class="a"><</span><span class="a">/li></span>
+<span class="a"><</span><span class="a">li</span> <span class="c">class=</span><span class="d">"list-group-item"</span><span class="a">></span><span class="a">Vestibulum at eros</span><span class="a"><</span><span class="a">/li></span>
+<span class="a"><</span><span class="a">/ul></span>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- END PART 1 RIGHT -->
+                <!-- PART 2 RIGHT-->
+                <h5 class="mt-5 fw-bold">With Badges</h5>
+                <div class="with border rounded-2 mt-4">
+                    <div class="with__bg">
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Cras justo odio
+                            <span class="badge badge-primary badge-pill rounded-5">14</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Dapibus ac facilisis in
+                            <span class="badge badge-primary badge-pill rounded-5">2</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Morbi leo risus
+                            <span class="badge badge-primary badge-pill rounded-5">1</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="code">
+                    <div class="code__bg">
+                        <div class="text">
+                            <pre>
+<span class="a"><</span><span class="a">ul</span> <span class="c">class=</span><span class="d">"list-group list-group-flush"</span><span class="a">></span>
+<span class="a"><</span><span class="a">li</span> <span class="c">class=</span><span class="d">"list-group-item d-flex justify-content-between align-items-center"</span><span class="a">></span><span class="a">
+Cras justo odio</span>
+<span class="a"><</span><span class="a">span</span> <span class="c">class=</span><span class="d">"badge badge-primary badge-pill"</span><span class="a">></span><span class="a">14</span><span class="a"><</span><span class="a">/span></span>
+<span class="a"><</span><span class="a">/li></span>
+<span class="a"><</span><span class="a">li</span> <span class="c">class=</span><span class="d">"list-group-item d-flex justify-content-between align-items-center"</span><span class="a">></span><span class="a">
+Dapibus ac facilisis in
+<span class="a"><</span><span class="a">span</span> <span class="c">class=</span><span class="d">"badge badge-primary badge-pill"</span><span class="a">></span><span class="a">2</span><span class="a"><</span><span class="a">/span></span>
+<span class="a"><</span><span class="a">/li></span>
+<span class="a"><</span><span class="a">li</span> <span class="c">class=</span><span class="d">"list-group-item d-flex justify-content-between align-items-center"</span><span class="a">></span><span class="a">
+Morbi leo risus
+<span class="a"><</span><span class="a">span</span> <span class="c">class=</span><span class="d">"badge badge-primary badge-pill"</span><span class="a">></span><span class="a">1</span><span class="a"><</span><span class="a">/span></span>
+<span class="a"><</span><span class="a">/li></span>
+<span class="a"><</span><span class="a">/ul></span>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- END PART 2 RIGHT -->
+            </div>
+
+        </div>
+        <h4 class="mt-5 text-dark fw-bold">Breadcrumb</h4>
+        <div class="bread border rounded-2 mt-4">
+            <div class="bread__bg">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Home</li>
+                    </ol>
+                    </nav>
+                    
+                    <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                    </nav>
+                    
+                    <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="code">
+            <div class="code__bg">
+                <div class="text">
+                    <pre>
+<span class="a"><</span><span class="a">nav</span> <span class="c">aria-label=</span><span class="d">"breadcrumb"</span><span class="a">></span>
+<span class="a"><</span><span class="a">ol</span> <span class="c">class=</span><span class="d">"breadcrumb"</span><span class="a">></span>
+<span class="a"><</span><span class="a">li</span> <span class="c">class=</span><span class="d">"breadcrumb-item active"</span> <span class="c">aria-current=</span><span class="d">"page"</span><span class="a">></span>Home<span class="a"><</span><span class="a">/li></span>
+<span class="a"><</span><span class="a">/ol></span>
+<span class="a"><</span><span class="a">/nav></span>
+
+
+<span class="a"><</span><span class="a">nav</span> <span class="c">aria-label=</span><span class="d">"breadcrumb"</span><span class="a">></span>
+<span class="a"><</span><span class="a">ol</span> <span class="c">class=</span><span class="d">"breadcrumb"</span><span class="a">></span>
+<span class="a"><</span><span class="a">li</span> <span class="c">class=</span><span class="d">"breadcrumb-item"</span><span class="a">></span><span class="a"><</span><span class="a">a</span> <span class="c">href=</span><span class="d">"#"</span><span class="a">></span>Home<span class="a"><</span><span class="a">/a></span><span class="a"><</span><span class="a">/li></span>
+<span class="a"><</span><span class="a">li</span> <span class="c">class=</span><span class="d">"breadcrumb-item active"</span> <span class="c">aria-current=</span><span class="d">"page"</span><span class="a">></span>Library<span class="a"><</span><span class="a">/li></span>
+<span class="a"><</span><span class="a">/ol></span>
+<span class="a"><</span><span class="a">/nav></span>
+
+
+<span class="a"><</span><span class="a">nav</span> <span class="c">aria-label=</span><span class="d">"breadcrumb"</span><span class="a">></span>
+<span class="a"><</span><span class="a">ol</span> <span class="c">class=</span><span class="d">"breadcrumb"</span><span class="a">></span>
+<span class="a"><</span><span class="a">li</span> <span class="c">class=</span><span class="d">"breadcrumb-item"</span><span class="a">></span><span class="a"><</span><span class="a">a</span> <span class="c">href=</span><span class="d">"#"</span><span class="a">></span>Home<span class="a"><</span><span class="a">/a></span><span class="a"><</span><span class="a">/li></span>
+<span class="a"><</span><span class="a">li</span> <span class="c">class=</span><span class="d">"breadcrumb-item"</span><span class="a">></span><span class="a"><</span><span class="a">a</span> <span class="c">href=</span><span class="d">"#"</span><span class="a">></span>Library<span class="a"><</span><span class="a">/a></span><span class="a"><</span><span class="a">/li></span>
+<span class="a"><</span><span class="a">li</span> <span class="c">class=</span><span class="d">"breadcrumb-item active"</span> <span class="c">aria-current=</span><span class="d">"page"</span><span class="a">></span>Data<span class="a"><</span><span class="a">/li></span>
+<span class="a"><</span><span class="a">/ol></span>
+<span class="a"><</span><span class="a">/nav></span>
+                    </pre>
+                </div>
+            </div>
+        </div>
+        <h4 class="mt-5 text-dark fw-bold">Tables</h4>
+        <div class="bang border rounded-2 mt-4">
+            <div class="bang__bg">
+                <table class="table">
+                    <thead>
+                    <tr>
+                      <th scope="col" class="border-top-0">#</th>
+                      <th scope="col" class="border-top-0">First</th>
+                      <th scope="col" class="border-top-0">Last</th>
+                      <th scope="col" class="border-top-0">Handle</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" id="highlight">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="code">
+            <div class="code__bg">
+                <div class="text">
+                    <pre>
+<span class="a"><</span><span class="a">table</span> <span class="c">class=</span><span class="d">"table"</span><span class="a">></span>
+<span class="a"><</span><span class="a">thead></span>
+<span class="a"><</span><span class="a">tr></span>
+    <span class="a"><</span><span class="a">th</span> <span class="c">scope=</span><span class="d">"col"</span><span class="a">></span><span class="a">#</span><span class="a"><</span><span class="a">/th></span>
+    <span class="a"><</span><span class="a">th</span> <span class="c">scope=</span><span class="d">"col"</span><span class="a">></span><span class="a">First</span><span class="a"><</span><span class="a">/th></span>
+    <span class="a"><</span><span class="a">th</span> <span class="c">scope=</span><span class="d">"col"</span><span class="a">></span><span class="a">Last</span><span class="a"><</span><span class="a">/th></span>
+    <span class="a"><</span><span class="a">th</span> <span class="c">scope=</span><span class="d">"col"</span><span class="a">></span><span class="a">Handle</span><span class="a"><</span><span class="a">/th></span>
+<span class="a"><</span><span class="a">/tr></span>
+<span class="a"><</span><span class="a">/thead></span>
+<span class="a"><</span><span class="a">tbody></span>
+<span class="a"><</span><span class="a">tr></span>
+    <span class="a"><</span><span class="a">th</span> <span class="c">scope=</span><span class="d">"row"</span><span class="a">></span><span class="a">1</span><span class="a"><</span><span class="a">/th></span>
+    <span class="a"><</span><span class="a">td></span><span class="a">Mark</span><span class="a"><</span><span class="a">/td></span>
+    <span class="a"><</span><span class="a">td></span><span class="a">Otto</span><span class="a"><</span><span class="a">/td></span>
+    <span class="a"><</span><span class="a">td></span><span class="a">@mdo</span><span class="a"><</span><span class="a">/td></span>
+<span class="a"><</span><span class="a">/tr></span>
+<span class="a"><</span><span class="a">tr></span>
+    <span class="a"><</span><span class="a">th</span> <span class="c">scope=</span><span class="d">"row"</span><span class="a">></span><span class="a">2</span><span class="a"><</span><span class="a">/th></span>
+    <span class="a"><</span><span class="a">td></span><span class="a">Jacob</span><span class="a"><</span><span class="a">/td></span>
+    <span class="a"><</span><span class="a">td></span><span class="a">Thornton</span><span class="a"><</span><span class="a">/td></span>
+    <span class="a"><</span><span class="a">td></span><span class="a">@fat</span><span class="a"><</span><span class="a">/td></span>
+<span class="a"><</span><span class="a">/tr></span>
+<span class="a"><</span><span class="a">tr></span>
+    <span class="a"><</span><span class="a">th</span> <span class="c">scope=</span><span class="d">"row"</span><span class="a">></span><span class="a">3</span><span class="a"><</span><span class="a">/th></span>
+    <span class="a"><</span><span class="a">td></span><span class="a">Larry</span><span class="a"><</span><span class="a">/td></span>
+    <span class="a"><</span><span class="a">td></span><span class="a">the Bird</span><span class="a"><</span><span class="a">/td></span>
+    <span class="a"><</span><span class="a">td></span><span class="a">@twitter</span><span class="a"><</span><span class="a">/td></span>
+<span class="a"><</span><span class="a">/tr></span>
+<span class="a"><</span><span class="a">/tbody></span>
+<span class="a"><</span><span class="a">/table></span>
+                    </pre>
+                </div>
+            </div>
+        </div>
+        <h5 class="mt-5 fw-bold">Striped rows</h5>
+        <div class="stripe border rounded-2 mt-4">
+            <div class="stripe__bg">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                      <th scope="col" class="border-top-0">#</th>
+                      <th scope="col" class="border-top-0">First</th>
+                      <th scope="col" class="border-top-0">Last</th>
+                      <th scope="col" class="border-top-0">Handle</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" id="highlight">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="code">
+            <div class="code__bg">
+                <div class="text">
+                    <pre>
+<span class="a"><</span><span class="a">table</span> <span class="c">class=</span><span class="d">"table table-striped"</span><span class="a">></span>
+<span class="a"><</span><span class="a">thead></span>
+<span class="a"><</span><span class="a">tr></span>
+    <span class="a"><</span><span class="a">th</span> <span class="c">scope=</span><span class="d">"col"</span><span class="a">></span><span class="a">#</span><span class="a"><</span><span class="a">/th></span>
+    <span class="a"><</span><span class="a">th</span> <span class="c">scope=</span><span class="d">"col"</span><span class="a">></span><span class="a">First</span><span class="a"><</span><span class="a">/th></span>
+    <span class="a"><</span><span class="a">th</span> <span class="c">scope=</span><span class="d">"col"</span><span class="a">></span><span class="a">Last</span><span class="a"><</span><span class="a">/th></span>
+    <span class="a"><</span><span class="a">th</span> <span class="c">scope=</span><span class="d">"col"</span><span class="a">></span><span class="a">Handle</span><span class="a"><</span><span class="a">/th></span>
+<span class="a"><</span><span class="a">/tr></span>
+<span class="a"><</span><span class="a">/thead></span>
+<span class="a"><</span><span class="a">tbody></span>
+<span class="a"><</span><span class="a">tr></span>
+    <span class="a"><</span><span class="a">th</span> <span class="c">scope=</span><span class="d">"row"</span><span class="a">></span><span class="a">1</span><span class="a"><</span><span class="a">/th></span>
+    <span class="a"><</span><span class="a">td></span><span class="a">Mark</span><span class="a"><</span><span class="a">/td></span>
+    <span class="a"><</span><span class="a">td></span><span class="a">Otto</span><span class="a"><</span><span class="a">/td></span>
+    <span class="a"><</span><span class="a">td></span><span class="a">@mdo</span><span class="a"><</span><span class="a">/td></span>
+<span class="a"><</span><span class="a">/tr></span>
+<span class="a"><</span><span class="a">tr></span>
+    <span class="a"><</span><span class="a">th</span> <span class="c">scope=</span><span class="d">"row"</span><span class="a">></span><span class="a">2</span><span class="a"><</span><span class="a">/th></span>
+    <span class="a"><</span><span class="a">td></span><span class="a">Jacob</span><span class="a"><</span><span class="a">/td></span>
+    <span class="a"><</span><span class="a">td></span><span class="a">Thornton</span><span class="a"><</span><span class="a">/td></span>
+    <span class="a"><</span><span class="a">td></span><span class="a">@fat</span><span class="a"><</span><span class="a">/td></span>
+<span class="a"><</span><span class="a">/tr></span>
+<span class="a"><</span><span class="a">tr></span>
+    <span class="a"><</span><span class="a">th</span> <span class="c">scope=</span><span class="d">"row"</span><span class="a">></span><span class="a">3</span><span class="a"><</span><span class="a">/th></span>
+    <span class="a"><</span><span class="a">td></span><span class="a">Larry</span><span class="a"><</span><span class="a">/td></span>
+    <span class="a"><</span><span class="a">td></span><span class="a">the Bird</span><span class="a"><</span><span class="a">/td></span>
+    <span class="a"><</span><span class="a">td></span><span class="a">@twitter</span><span class="a"><</span><span class="a">/td></span>
+<span class="a"><</span><span class="a">/tr></span>
+<span class="a"><</span><span class="a">/tbody></span>
+<span class="a"><</span><span class="a">/table></span>
+                    </pre>
+                </div>
+            </div>
+        </div>
+        <h4 class="mt-5 text-dark fw-bold">Modals</h4>
+        <h5 class="mt-5 fw-bold">Live demo</h5>
+        <div class="live border rounded-2 mt-4">
+            <div class="live__bg">
+                <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cam_nhat">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+            </div>
+        </div>
+        <div class="code">
+            <div class="code__bg">
+                <div class="text">
+                    <pre>
+<span class="a"><</span><span class="a">!-- Button trigger modal --</span><span class="a">></span>
+<span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"btn btn-primary"</span> <span class="c">data-toggle=</span><span class="d">"modal"</span> <span class="c">data-target=</span><span class="d">"#exampleModal"</span><span class="a">></span>
+Launch demo modal
+<span class="a"><</span><span class="a">/button></span>
+
+
+<span class="a"><</span><span class="a">!-- Modal --</span><span class="a">></span>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"modal fade"</span> <span class="c">id=</span><span class="d">"exampleModal"</span> <span class="c">tabindex=</span><span class="d">"-1"</span> <span class="c">role=</span><span class="d">"dialog"</span> <span class="c">aria-labelledby=</span><span class="d">"exampleModalLabel"</span> <span class="c">aria-hidden=</span><span class="d">"true"</span><span class="a">></span>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"modal-dialog"</span> <span class="c">role=</span><span class="d">"document"</span><span class="a">></span>
+    <span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"modal-content"</span><span class="a">></span>
+        <span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"modal-header"</span><span class="a">></span>
+        <span class="a"><</span><span class="a">h5</span> <span class="c">class=</span><span class="d">"modal-title"</span> <span class="c">id=</span><span class="d">"exampleModalLabel"</span><span class="a">></span>Modal title<span class="a"><</span><span class="a">/h5></span>
+        <span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"close"</span> <span class="c">data-dismiss=</span><span class="d">"modal"</span> <span class="c">aria-label=</span><span class="d">"Close"</span><span class="a">></span>
+            <span class="a"><</span><span class="a">span</span> <span class="c">aria-hidden=</span><span class="d">"true"</span><span class="a">></span><span class="a">&times;</span><span class="a"><</span><span class="a">/span></span>
+        <span class="a"><</span><span class="a">/button></span>
+        <span class="a"><</span><span class="a">/div></span>
+        <span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"modal-body"</span><span class="a">></span>
+        . . . 
+        <span class="a"><</span><span class="a">/div></span>
+        <span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"modal-footer"</span><span class="a">></span>
+        <span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"btn btn-secondary"</span> <span class="c">data-dismiss=</span><span class="d">"modal"</span><span class="a">></span>Close<span class="a"><</span><span class="a">/button></span>
+        <span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"btn btn-primary"</span><span class="a">></span>Save changes<span class="a"><</span><span class="a">/button></span>
+        <span class="a"><</span><span class="a">/div></span>
+    <span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">/div></span>
+                    </pre>
+                </div>
+            </div>
+        </div>
+        <h5 class="mt-5 fw-bold">Vertically centered</h5>
+        <div class="verti border rounded-2 mt-4">
+            <div class="verti__bg">
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cam_nhat">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+            </div>
+        </div>
+        <div class="code">
+            <div class="code__bg">
+                <div class="text">
+                    <pre>
+<span class="a"><</span><span class="a">!-- Button trigger modal --</span><span class="a">></span>
+<span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"btn btn-primary"</span> <span class="c">data-toggle=</span><span class="d">"modal"</span> <span class="c">data-target=</span><span class="d">"#exampleModalCenter"</span><span class="a">></span>
+Launch demo modal
+<span class="a"><</span><span class="a">/button></span>
+
+
+<span class="a"><</span><span class="a">!-- Modal --</span><span class="a">></span>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"modal fade"</span> <span class="c">id=</span><span class="d">"exampleModalCenter"</span> <span class="c">tabindex=</span><span class="d">"-1"</span> <span class="c">role=</span><span class="d">"dialog"</span> <span class="c">aria-labelledby=</span><span class="d">"exampleModalCenterTitle"</span> <span class="c">aria-hidden=</span><span class="d">"true"</span><span class="a">></span>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"modal-dialog modal-dialog-centered"</span> <span class="c">role=</span><span class="d">"document"</span><span class="a">></span>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"modal-content"</span><span class="a">></span>
+    <span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"modal-header"</span><span class="a">></span>
+    <span class="a"><</span><span class="a">h5</span> <span class="c">class=</span><span class="d">"modal-title"</span> <span class="c">id=</span><span class="d">"exampleModalLongTitle"</span><span class="a">></span>Modal title<span class="a"><</span><span class="a">/h5></span>
+    <span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"close"</span> <span class="c">data-dismiss=</span><span class="d">"modal"</span> <span class="c">aria-label=</span><span class="d">"Close"</span><span class="a">></span>
+        <span class="a"><</span><span class="a">span</span> <span class="c">aria-hidden=</span><span class="d">"true"</span><span class="a">></span><span class="a">x</span><span class="a"><</span><span class="a">/span></span>
+    <span class="a"><</span><span class="a">/button></span>
+    <span class="a"><</span><span class="a">/div></span>
+    <span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"modal-body"</span><span class="a">></span>
+    . . . 
+    <span class="a"><</span><span class="a">/div></span>
+    <span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"modal-footer"</span><span class="a">></span>
+    <span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"btn btn-secondary"</span> <span class="c">data-dismiss=</span><span class="d">"modal"</span><span class="a">></span>Close<span class="a"><</span><span class="a">/button></span>
+    <span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"button"</span> <span class="c">class=</span><span class="d">"btn btn-primary"</span><span class="a">></span>Save changes<span class="a"><</span><span class="a">/button></span>
+    <span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">/div></span>
+                    </pre>
+                </div>
+            </div>
+        </div>
+        <h4 class="mt-5 text-dark fw-bold">Forms</h4>
+        <div class="forms border rounded-2 mt-4">
+            <div class="forms__bg">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control mt-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1" class="mt-3">Password</label>
+                        <input type="password" class="form-control mt-2" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-check">
+                        <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
+                        <label class="form-check-label mt-3" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="code">
+            <div class="code__bg">
+                <div class="text">
+                    <pre>
+<span class="a"><</span><span class="a">form></span>
+<span class="a"><</span><span class="a">div</span> <span class="c">type=</span><span class="d">"form-group"</span><span class="a">></span>
+    <span class="a"><</span><span class="a">label</span> <span class="c">for=</span><span class="d">"exampleInputEmail1"</span><span class="a">></span>Email address<span class="a"><</span><span class="a">/label></span>
+    <span class="a"><</span><span class="a">input</span> <span class="c">type=</span><span class="d">"email"</span> <span class="c">class=</span><span class="d">"form-control"</span> <span class="c">id=</span><span class="d">"exampleInputEmail1"</span> <span class="c">aria-describedby=</span><span class="d">"emailHelp"</span> <span class="c">placeholder=</span><span class="d">"Enter email"</span><span class="a">></span>
+    <span class="a"><</span><span class="a">small</span> <span class="c">id=</span><span class="d">"emailHelp"</span> <span class="c">class=</span><span class="d">"form-text text-muted"</span><span class="a">></span>We'll never share your email with anyone else.<span class="a"><</span><span class="a">/small></span>
+<span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">div</span> <span class="c">type=</span><span class="d">"form-group"</span><span class="a">></span>
+    <span class="a"><</span><span class="a">label</span> <span class="c">for=</span><span class="d">"exampleInputEmail1"</span><span class="a">></span>Password<span class="a"><</span><span class="a">/label></span>
+    <span class="a"><</span><span class="a">input</span> <span class="c">type=</span><span class="d">"password"</span> <span class="c">class=</span><span class="d">"form-control"</span> <span class="c">id=</span><span class="d">"exampleInputPassword1"</span> <span class="c">placeholder=</span><span class="d">"Password"</span><span class="a">></span>
+<span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">div</span> <span class="c">type=</span><span class="d">"form-check"</span><span class="a">></span>
+    <span class="a"><</span><span class="a">input</span> <span class="c">type=</span><span class="d">"checkbox"</span> <span class="c">class=</span><span class="d">"form-check-input"</span> <span class="c">id=</span><span class="d">"exampleCheck1"</span><span class="a">></span>
+    <span class="a"><</span><span class="a">label</span> <span class="c">class=</span><span class="d">"form-check-label"</span> <span class="c">for=</span><span class="d">"exampleCheck1"</span><span class="a">></span>Check me out<span class="a"><</span><span class="a">/label></span>
+<span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">button</span> <span class="c">type=</span><span class="d">"submit"</span><span class="a">></span> <span class="c">class=</span><span class="d">"btn btn-primary"</span><span class="a">></span>Submit<span class="a"><</span><span class="a">/button></span>
+<span class="a"><</span><span class="a">/form></span>
+                    </pre>
+                </div>
+            </div>
+        </div>
+        <h5 class="mt-5 fw-bold">Readonly plain text</h5>
+        <div class="read border rounded-2 mt-4">
+            <div class="read__bg">
+                <form>
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                        <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                        </div>
+                    </div>
+                    <div class="form-group row mt-3">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="code">
+            <div class="code__bg">
+                <div class="text">
+                    <pre>
+<span class="a"><</span><span class="a">form></span>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"form-group row"</span><span class="a">></span>
+    <span class="a"><</span><span class="a">label</span> <span class="c">for=</span><span class="d">"staticEmail"</span> <span class="c">class=</span><span class="d">"col-sm-2 col-form-label"</span><span class="a">></span>Email<span class="a"><</span><span class="a">/label></span>
+    <span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"col-sm-10"</span><span class="a">></span>
+    <span class="a"><</span><span class="a">input</span> <span class="c">type=</span><span class="d">"text"</span> <span class="c">readonly</span> <span class="c">class=</span><span class="d">"form-control-plaintext"</span> <span class="c">id=</span><span class="d">"staticEmail"</span> <span class="c">value=</span><span class="d">"email@example.com"</span><span class="a">></span>
+    <span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"form-group row"</span><span class="a">></span>
+    <span class="a"><</span><span class="a">label</span> <span class="c">for=</span><span class="d">"inputPassword"</span> <span class="c">class=</span><span class="d">"col-sm-2 col-form-label"</span><span class="a">></span>Password<span class="a"><</span><span class="a">/label></span>
+    <span class="a"><</span><span class="a">div</span> <span class="c">class=</span><span class="d">"col-sm-10"</span><span class="a">></span>
+    <span class="a"><</span><span class="a">input</span> <span class="c">type=</span><span class="d">"password"</span> <span class="c">class=</span><span class="d">"form-control"</span> <span class="c">id=</span><span class="d">"inputPassword"</span> <span class="c">placeholder=</span><span class="d">"Password"</span><span class="a">></span>
+    <span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">/div></span>
+<span class="a"><</span><span class="a">/form></span>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- END OVERVIEW -->
+  </main>
+  <!-- FOOTER -->
+  <footer>
+    <section class="footer__main">
+      <div class="py-5">
+        <div class="container py-lg-4">
+          <div class="content row">
+            <!-- div 1 -->
+            <div class="diner col-lg-4 col-md-6 col-sm-7 pe-lg-5">
+              <div class="footer__logo mb-3">
+                <h5>
+                  <a class="navbar-brand" href="#">Diner</a>
+                </h5>
+              </div>
+              <p>
+                Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel.
+                Lorem
+                ipsum dolor sit amet Semper at elit.
+              </p>
+              <div class="footer__socials mt-4">
+                <a href="https://www.facebook.com/w3layouts/" class="facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/W3layouts" class="twitter">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/w3layouts_/" class="instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://in.linkedin.com/company/w3layouts" class="linkedin">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-5 col-6 mt-sm-0 mt-5 categories">
+              <div id="categories-4" class="widget_categories">
+                <h6>Categories</h6>
+                <ul>
+                  <li class="item-2"><a href="#drinks/">Drinks</a>
+                  </li>
+                  <li class="item-3"><a href="#food/">Food</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-5 col-6 archive mt-lg-0 mt-5">
+              <div id="archives-4" class="widget_archive">
+                <h6>Archives</h6>
+                <ul>
+                  <li><a href="#/diner/2021/03/">March 2021</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-7 mt-lg-0 mt-5 subcribe">
+              <h6>Subscribe to our Newsletter </h6>
+              <p>Enter your email and receive the latest news, updates and special offers from us.</p>
+              <form action="" class="form__subscribe mt-4" method="post">
+                <input id="Email" type="email" name="Email" placeholder="Your Email Address" required="">
+                <button class="btn form__btn w-100 mt-3">Subscribe Now</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- COPYRIGHT -->
+    <section class="copyright">
+      <div class="container">
+        <div class="row">
+          <p class="col-lg-8 copyright__text">
+            © 2023 Diner. All Rights Reserved | WordPress Theme by <a href="https://w3layouts.com/">W3Layouts.</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- END COPYRIGHT -->
+  </footer>
+  <!-- BACK TO TOP -->
+
+  <a href="#myHeader" class="backtotop cd-top text-replace js-cd-top ">
+    <i class="fa-solid fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+  <!-- Back to top animation -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./js/main_backtotop.js"></script>
+  <script src="./js/util.js"></script>
+
+  <script src="./js/dark_theme.js"></script>
+</body>
+
+</html>
